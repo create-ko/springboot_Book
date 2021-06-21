@@ -15,9 +15,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r springboot_Book *
+  - zip -r springboot_Book ./*
   - mkdir -p deploy
-  - mv springboot_Book deply/springboot_Book.zip
+  - mv springboot_Book.zip deply/springboot_Book.zip
 
 deploy:
   - provider: s3
