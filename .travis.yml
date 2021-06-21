@@ -34,9 +34,9 @@ deploy:
     local_dir: deploy
     wait-until-deployed:true
 
+
 # CI executing success send e-mail
 notifications:
   email:
     recipients:
       - tmdgmlzja@naver.com
-
